@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays Interativos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>JavaScript Arrays Interativos</h1>
+
+  <!-- Array.keys -->
+  <h3>Array.keys()</h3>
+  <label>Digite os itens separados por vírgula:</label>
+  <input type="text" id="inputKeys" placeholder="Ex: maçã, banana, laranja">
+  <button onclick="mostrarKeys()">Mostrar .keys()</button>
+  <p id="keys01"></p>
+  <p id="keys02" class="hidden"></p>
+
+  <!-- Array.with -->
+  <h3>Array.with()</h3>
+  <label>Digite os itens separados por vírgula:</label>
+  <input type="text" id="inputWith" placeholder="Ex: camisa, calça, boné">
+  <label>Índice a ser substituído:</label>
+  <input type="number" id="indexWith" placeholder="Ex: 1">
+  <label>Novo valor:</label>
+  <input type="text" id="newValueWith" placeholder="Ex: moletom">
+  <button onclick="mostrarWith()">Mostrar .with()</button>
+  <p id="with01"></p>
+  <p id="with02" class="hidden"></p>
+
+  <!-- Array.reduceRight -->
+  <h3>Array.reduceRight()</h3>
+  <label>Digite as palavras separadas por vírgula:</label>
+  <input type="text" id="inputReduceRight" placeholder="Ex: JS, é, legal">
+  <button onclick="mostrarReduceRight()">Mostrar .reduceRight()</button>
+  <p id="reduceRight01"></p>
+  <p id="reduceRight02" class="hidden"></p>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
