@@ -1,3 +1,53 @@
+//Array.Every
+function mostrarEvery() {
+    // Obter o valor do input e criar um array de números
+    const input = document.getElementById('inputEvery').value;
+    const array = input.split(',').map(item => parseInt(item.trim()));
+
+    // Obter os elementos HTML para exibir os resultados
+    const resultBox = document.getElementById('every02');
+    document.getElementById('every01').innerHTML = `<strong>Lista:</strong> ${array.join(', ')}`;
+    resultBox.innerHTML = '';
+
+    // Verificar se todos os números do array são maiores que 0
+    const resultado = array.every(item => item > 10);
+
+    // Exibir o resultado
+    resultBox.innerHTML += `Todos os números são maiores que 10? ${resultado}`;
+    resultBox.classList.remove('hidden');
+}
+
+//Array.some
+function mostrarSome() {
+    // Obter o valor do input e criar um array de números
+    const input = document.getElementById('inputSome').value;
+    const array = input.split(',').map(item => parseInt(item.trim()));
+
+    // Obter os elementos HTML para exibir os resultados
+    const resultBox = document.getElementById('some02');
+    document.getElementById('some01').innerHTML = `<strong>Lista:</strong> ${array.join(', ')}`;
+    resultBox.innerHTML = '';
+
+    // Verificar se existe algum número maior que 10 no array
+    const resultado = array.some(item => item > 10);
+
+    // Exibir o resultado
+    resultBox.innerHTML += `Existe algum número maior que 10? ${resultado}`;
+    resultBox.classList.remove('hidden');
+}
+
+function mostrarFrom() {
+    // Obter o valor do input e criar um array de letras
+    const inputArrayFrom = document.getElementById('inputArrayFrom').value;
+    const arrayFrom = Array.from(inputArrayFrom);
+
+    // Elemento para exibir o array original
+    const arrayFrom01 = document.getElementById('arrayFrom01');
+
+    // Exibir o array original
+    arrayFrom01.innerText = `Array.from(): ${arrayFrom}`;
+}
+
 //KEYS do HTML
 function mostrarKeys() {
     const input = document.getElementById('inputKeys').value;
