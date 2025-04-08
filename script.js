@@ -65,7 +65,7 @@ function mostrarKeys() {
 // KEYS para exemplo no console
 let doces = ['chocolate', 'doce de leite', 'fini'];
 for (let i of doces.keys()) {
-    console.log(`Doce na posição ${i}: ${doces[i]}`);
+    console.log(`Doce na posição ${i}: ${doces[i]}`); 
 }
 
 
