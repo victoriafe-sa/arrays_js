@@ -36,11 +36,11 @@ Este projeto tem fins **didáticos**, com foco em **reforçar o aprendizado sobr
 ## 🔗 Link para a Visualização
 
 Você pode acessar a versão online do projeto através do seguinte link:  
-https://kauaog13.github.io/tb-arrays-js/
+https://victoriafe-sa.github.io/arrays_js/
 
 ---
 ## 📁 Como Rodar Localmente
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/victoriafe-sa/array_js.git
